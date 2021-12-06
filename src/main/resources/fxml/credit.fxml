@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="condo.controller.CreditController">
+   <children>
+      <Button fx:id="closeBut" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonOnAction" prefHeight="40.0" prefWidth="73.0" style="-fx-background-color: lightgreen;" text="CLOSE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="233.0" layoutY="287.0" text="NAME: Soottipong Thaicharoen">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="314.0" text="ID: 6210406718">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="173.0" fitWidth="173.0" layoutX="314.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pic/61657010_1158102444398021_3263711559074971648_n.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="471.0" prefHeight="27.0" prefWidth="309.0" text="ควรอ่านไฟล์ PDF เพื่อการใช้งานที่ครบถ้วน">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="434.0" text="NOTICE!!!">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="condo.controller.StaffPageController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="486.0" prefWidth="103.0" style="-fx-background-color: grey;" />
+      <Button fx:id="logoutBut" layoutY="200.0" mnemonicParsing="false" onAction="#handleButtonOnAction" style="-fx-background-color: lightgreen;" text="LOGOUT">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mailManageBut" layoutY="150.0" mnemonicParsing="false" onAction="#handleButtonOnAction" style="-fx-background-color: #F9A041;" text="MAIL MANAGEMENT">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="roomManageBut" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonOnAction" style="-fx-background-color: #F53E36;" text="ROOM MANAGEMENT">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </Button>
+      <Pane fx:id="changePasswordPane" layoutX="249.0" layoutY="85.0" prefHeight="310.0" prefWidth="364.0">
+         <children>
+            <PasswordField fx:id="newPass" alignment="CENTER" layoutX="173.0" layoutY="95.0" prefHeight="28.0" prefWidth="164.0" promptText="NEW PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="conPass" alignment="CENTER" layoutX="173.0" layoutY="140.0" prefHeight="28.0" prefWidth="164.0" promptText="CONFIRM PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="11.0" layoutY="57.0" text="CURRENT PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="100.0" prefHeight="18.0" prefWidth="113.0" text="NEW PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="145.0" prefHeight="18.0" prefWidth="145.0" text="CONFIRM PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="14.0" text="CHANGE PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="curPass" alignment="CENTER" layoutX="173.0" layoutY="52.0" prefHeight="28.0" prefWidth="164.0" promptText="CURRENT PASSWORD">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="changePasswordBut" layoutX="155.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleButtonOnAction" style="-fx-background-color: lightblue;" text="CHANGE">
+               <font>
+                  <Font name="Tw Cen MT" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="staffNameLabel" alignment="CENTER" prefHeight="65.0" prefWidth="640.0" style="-fx-background-color: grey;">
+         <font>
+            <Font name="Tw Cen MT" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="113.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pic/staff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="170.0" fitWidth="186.0" layoutX="18.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pic/553929.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
